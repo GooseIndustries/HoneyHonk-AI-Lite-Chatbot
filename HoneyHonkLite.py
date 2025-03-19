@@ -1,5 +1,5 @@
 import torch
-from transformers import GPTNeoXForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 print("Loading HoneyHonk... (This might take a while!)")
 model_name = "EleutherAI/gpt-neo-125M"
