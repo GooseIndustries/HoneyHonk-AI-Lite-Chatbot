@@ -5,7 +5,7 @@ print("Loading HoneyHonk... (This might take a while!)")
 model_name = "EleutherAI/gpt-neo-125M"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = GPTNeoXForCausalLM.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
